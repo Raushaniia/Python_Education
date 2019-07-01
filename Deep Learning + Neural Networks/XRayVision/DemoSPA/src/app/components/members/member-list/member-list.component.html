@@ -1,0 +1,13 @@
+<nav class="navbar navbar-light justify-content-center mt-4">
+  <form class="form-inline col-lg-12">
+      <input class="form-control form-control-lg ml-5 mr-2 col-lg-10" type="search" placeholder="Type a name" aria-label="Search" id="search">
+      <button type="button" class="btn btn-primary btn-lg mr-3 col-lg-1" id="btnSort" style="background-color:#5CBD99;border-color: #3F9474;">Search</button>
+  </form>
+</nav>
+<div class="container">
+  <div class="row">
+    <div *ngFor="let user of users" class="col-lg-4">
+      <app-member-card [user]="user"></app-member-card>
+    </div>
+  </div>
+</div>

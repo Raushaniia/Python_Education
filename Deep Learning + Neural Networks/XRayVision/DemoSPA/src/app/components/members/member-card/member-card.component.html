@@ -1,0 +1,12 @@
+<div class="card mt-4 ml-1" >
+  <div class="card-header">
+    {{user.knownAs}}
+    </div>
+  <img class="card-img-top animate" src="{{user.photoUrl}}" alt="{{user.knownAs}}">
+  <div class="card-body">
+    <h5 class="card-title">{{user.age}}</h5>
+    <p class="card-text">{{user.city}}</p>
+    <div class="wrapper"></div>
+    <button class="btn btn-primary" style="background-color:#5CBD99;border-color: #3F9474;position: relative;left: 70px;" [routerLink]="['/members/', user.id]">Open patient card</button>
+  </div>
+</div>

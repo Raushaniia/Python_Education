@@ -1,0 +1,20 @@
+<div *ngIf="!registerMode" class="container" >
+  <div class="row">
+    <div class="col-md-6 offset-md-3  text-center ">
+      <h1>Welcome to X-Ray Vision</h1>
+      <p class="lead"> All you need to do is sign up!</p>
+      <div class="text-center">
+        <button class="btn btn-primary btn-lg" style="background-color:#5CBD99;border-color: #3F9474;" (click)="registerToggle()">Register</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="registerMode" class="container">
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+      <app-register (cancelRegister)="cancelRegisterMode($event)"></app-register>
+    </div>
+  </div>
+
+</div>
